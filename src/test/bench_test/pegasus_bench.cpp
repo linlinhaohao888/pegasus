@@ -73,11 +73,11 @@ DEFINE_int64(seed,
 DEFINE_int32(threads, 1, "Number of concurrent threads to run.");
 
 DEFINE_int32(duration,
-             0,
+             300,
              "Time in seconds for the random-ops tests to run."
              " When 0 then num & reads determine the test duration");
 
-DEFINE_int32(value_size, 100, "Size of each value");
+DEFINE_int32(value_size, 10000, "Size of each value");
 
 DEFINE_int64(batch_size, 1, "Batch size");
 
