@@ -62,8 +62,8 @@ DEFINE_string(benchmarks,
               "\tmulti_set_pegasus        -- pegasus multi write N keys in random order\n"
               "\tscan_pegasus             -- pegasus scan N keys in random order\n");
 
-DEFINE_int64(num, 10000, "Number of key/values to place in database");
-DEFINE_int64(sortkey_count_per_hashkey, 100, "Number of sort key per hash key");
+DEFINE_int64(num, 1000000, "Number of key/values to place in database");
+DEFINE_int64(sortkey_count_per_hashkey, 10000, "Number of sort key per hash key");
 
 DEFINE_int64(seed,
              0,
@@ -77,7 +77,7 @@ DEFINE_int32(duration,
              "Time in seconds for the random-ops tests to run."
              " When 0 then num & reads determine the test duration");
 
-DEFINE_int32(value_size, 10000, "Size of each value");
+DEFINE_int32(value_size, 1000000, "Size of each value");
 
 DEFINE_int64(batch_size, 1, "Batch size");
 
